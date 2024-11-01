@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.good li').hover(function(){
+                $(this).find('.subMenu').css('display','block');
+            },function(){
+                $(this).find('.subMenu').css('display','none');
+            
+            });
+        });
+    </script>
+    <style>
+        /*전체 구획 설정*/
+        #body{
+            margin-left: 130px;
+            margin-right:130px;
+            width: 1300px;
+            height: 3150px;
+            
+            background-color:azure;
+            
+            
+        }
+        #top{
+            float: left;
+            width:1300px;
+            height:200px;
+            
+        }
+        #middle {
+            float: left;
+            margin-top: 50px;
+            width: 1300px;
+            height: 2900px;
+            
+
+        }
+        #middle_top{
+            float: left;
+            width: 1300px;
+            height:400px;
+            
+            background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA3MjBfMjUz%2FMDAxNjU4MzIzMTMxNzI0.46cQsseLk8idDBO95dgc3yIzi2PXQlWfZsplNvLwcngg.SKYWweNBVjpCF5EDBaQGMB--yMfM6QagJLoCPG6ZmmYg.JPEG.fly11061%2FM0012144.jpg&type=sc960_832);
+            background-repeat: no-repeat;
+            background-size: 40%;
+        }
+        .middle_top_left h2{
+                margin-left: 120px;
+                
+        }
+        
+        .a{
+            float: right;
+            margin-right: 350px;
+            margin-top: 100px;
+            width:300px;
+            height: 400px;
+            font-size: 20px;
+            
+        }
+        #middle_bottom{
+            float: left;
+            width: 1300px;
+           height: 2500px;
+            
+
+        }
+          /*전체 구획 설정*/
+            /*탑 구획 설정 전체 크기 
+            width:1080px;
+            height:200px;*/
+            .top_left{
+                float: left;
+                width: 500px;
+                height: 200px;
+                
+
+            }
+            .top_left h1{
+                margin-top: 80px;
+                margin-left: 150px;
+                
+            }
+            .top_right{
+                float: right;
+                width: 500px;
+                height: 200px;
+
+                
+
+
+            }
+            /*탑 구획 설정*/
+            .m{
+                float: left;
+                width: 350px;
+                height: 800px;
+                margin-left: 70px;
+                margin-top: 20px;
+                
+                font-size: 16px;
+            }
+            ul li{
+                list-style: none;
+            }
+            .good{
+                font-size: 18px;
+            }
+            .good > li{
+                width: 100px;
+                height: 30px;
+                line-height:30px;
+                float:left;
+                margin-left: 15px;
+                margin-right: 10px;
+                
+                
+            }.subMenu{
+                width: 200px;
+               
+                padding:0;
+            }
+            .subMenu >li{
+                width:200px;
+                height:70px;
+                
+            }
+            .good span{
+                float:left;
+            }
+            .img{width:350px;
+                height: 400px;
+                margin-top: 20px;
+            }.img1{
+                width:350px;
+                height: 350px;
+                margin-top:0px
+            }
+            a{color:black;
+                text-decoration-line: none;
+
+            }.top_right >ul >li >ul{
+                width: 200px;
+                display: none;
+                position: absolute;
+                background:skyblue;
+            }
+		
+ 
+    </style>
+</head>
+<body>
+    <div id="body">
+        <div id="top">
+            <div class="top_left"><h1>올레길</h1>
+            <hr></div>
+            
+            <div class="top_right">
+                <ul class="good">
+                <li ><a href="#one">올레길5코스</a>
+                    <ul class="subMenu">
+                        <li ><a href="#">남원큰엉해안경승지</a></li>
+                        <li><a href="#">쇠소깍</a></li>
+                    </ul>
+                </li>
+                    
+                <li ><a href="#two">올레길6코스</a>
+                        <ul class="subMenu">
+                            <li><a href="#">소천지</a></li>
+                            <li><a href="#">정방폭포</a></li>
+                        </ul>
+                </li>
+                    
+                    <li ><a href="#three">올레길7코스</a>
+                        <ul class="subMenu">
+                            <li><a href="#">외돌개</a></li>
+                            <li><a href="#">황우지해안</a></li>
+                        </ul>
+                </li>    
+             </ul></div>
+        </div>
+        <div id="middle">
+
+            <div id="middle_top">
+                <div class="middle_top_left"><h2>올레길의 뜻</h2></div>
+                <div class="a"><p>올레길은 산이나 계곡, 바다 등에 난 길을 연결하여 개발한 산책로이다. 올레란 제주 방언으로 좁은 골목이란 뜻이며, 통상 큰길에서 집의 대문까지 이어지는 좁은 길을 말한다.</p> </div>
+                
+            </div>
+
+            <div id="middle_bottom">
+                <div class="m" id="one">올레길5코스 지도 가볼만한곳 
+                    <img class="img" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA1MTVfMTU0%2FMDAxNTg5NTAzMDE2MTcx.sdn_MMPal-ZeMcvXGe9aE4yq8IXDKMvVJsrM1uMgasgg.Gwy0gVBYJaUvFTyD6-kyVIt5snwP8XvbKnCFtU0AggAg.PNG.wnghd9rl%2Fimage.png&type=sc960_832" >
+                    
+                </div>
+                <div class="m">남원큰엉해안경승지
+                    <img class="img1" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA5MTVfNTEg%2FMDAxNjYzMjIyMjgyODI0.Rmv6k9xTupKnzUZEy0Wb7lWSyXC77CewlUqOcFTn1cog.1zv5LDSNsXYpQEw45UIIZ3QD8IjOgkwGVcUsv0uT1Ocg.JPEG.ansutan%2F20220826%25A3%25DF141918.jpg&type=sc960_832" >
+                <p>제주특별자치도 서귀포시 남원읍 남원리의 해안 경승지로, 남원해안경승지라고도 한다. 제주국제공항으로부터 42.7km, 서귀포시내로부터 24km 거리에 있다. ‘큰엉’이란 제주도 사투리로 ‘큰 언덕’이라는 뜻인데 커다란 바위 덩어리들이 바다를 집어 삼킬 듯이 입을 벌리고 있는 언덕이라 하여 붙여진 이름이다.이곳에는 높이 15~20m에 이르는 검은 용암 덩어리의 해안 기암절벽이 마치 성을 쌓은 듯 펼쳐져 있고, 거대한 해안동굴이 곳곳에 형성되어 있다. 큰엉에 서면 탁 트인 짙푸른 바다와 거대한 절벽에 힘차게 내달아 부딪히는 파도가 만들어내는 장관을 볼 수 있다.
+                    
+                    
+                    
+                </p>                    
+                </div>
+                <div class="m">쇠소깍
+                    <img class="img1" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAzMjdfNyAg%2FMDAxNjc5ODQ0NjEzNTM0.ZOghW-xByRkw6NwMRf4k2g53tjWdASvA2ttV7XK1KVQg.9Ya1UwJwGu0gXogJOmBKlt4q5TtJtimvK2ymOD03MRUg.JPEG.dyj03153%2FIMG_6799.jpg&type=sc960_832" >
+                    <p>2011년 6월 30일 문화재청이 외돌개, 산방산과 함께 국가지정문화재 명승으로 지정했다. 서귀포시 하효동과 남원읍 하례리 사이를 흐르는 효돈천(孝敦川) 하구를 가리키며, 이곳은 제주 현무암 지하를 흐르는 물이 분출하여 바닷물과 만나 깊은 웅덩이를 형성한 곳이다. 쇠소깍이라는 이름은 제주도 방언이다. 쇠는 효돈마을을 뜻하며, 소는 연못, 각은 접미사로서 끝을 의미한다. 계곡의 풍경이 아름다운 곳으로 뛰어난 비경을 가진곳으로 알려져 있다.
+                    </p>
+                </div>
+                <div class="m" id="two">올레길 6코스 지도 가볼만한곳
+                    <img  class="img" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA2MTFfODQg%2FMDAxNjIzMzk1MTUxMTEx.7BDTyX-ft-VTa1GeemB0aKyXCzmHsKXeW0KTQ1vuAcog.p1YuD1xOeVd2dCjQtWIg0Et6gLJ_smrHLe-h7yt0PFcg.JPEG.doa04095%2FIMG_0666.jpg&type=sc960_832" >
+                </div>
+                <div class="m">소천지
+                    <img class="img1" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA1MTZfMTE3%2FMDAxNjIxMTU3ODUxMzc3.yguT4-_epFWzOSJuK5tcMblFUYOzfYV6UHaFCagATpkg.vKszCN3GVgSeAyLwL2FdLlvNfu_g2zQA4qxVkBy5Nxkg.JPEG.jh4332%2FIMG_9195.jpg&type=sc960_832" >
+                    <p>소천지는 보목동 해안가에 있는 화산암지대로 백두산 천지의 모습을 축소해 놓은 모습과 비슷하다고 해서 붙혀진 이름이다.
+
+                        소천지 화산활동으로 생긴 용암이 바닷물에 불규칙한 형태로 식으면서 생성되었다. 해안 기암들은 파도를 막아주어 해수욕을 즐기기에 좋고 낚시객들도 많이 찾는다.
+                        </p>
+                </div>
+                <div class="m">정방폭포
+                    <img class="img1" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMDRfMTQ5%2FMDAxNjcwMTMwNzMwMjY1.e0lUP6ov20VmU7gt1Tl6I-5glbvkJcRX8z4KnKU9iRcg.3xcc8m8-fXThBk5KofATgT5CJtGRjh2fZl5fTF595LUg.JPEG.yujin7973%2FIMG_4045.jpg&type=sc960_832">
+                    <p>높이 23m의 까만 절벽에서 ‘쏴아-’ 하는 시원한 소리와 함께 쏟아져내리는 정방폭포는 바다로 직접 떨어지는 동양 유일의 해안폭포이다. 절벽에 서 있지만 폭포처럼 바다로 빠져들고 싶은 듯 바다를 향해 가지를 뻗고 있는 둥치 굵은 소나무, 폭포를 지켜보는 듯 여유롭고 한가로운 서귀포 앞바다에 떠 있는 섬, 그리고 멀리 한라산의 웅장한 모습 들이 한눈에 그림처럼 보이는 정방폭포의 시원한 경치는 예로부터 ‘정방하폭’이라 하여 제주 10경으로 꼽혔다.
+                    </p>
+                </div>
+                <div class="m" id="three">올레길 7코스지도 가볼만한곳
+                    <img class="img" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MDhfMjk5%2FMDAxNjI4NDMxMzAyNjQ1.ok_kmMZg4gvGw2UvBb-UF8OKue8yPT098m6k9XMl4nUg.o-ZiUA5o7Pdz_21XsiNW13ZaoLlmHPnnhCQmcyow8F8g.JPEG.viator5%2Fm%25A3%25DFsub%25A3%25DFmap%25A3%25DF07.jpg&type=sc960_832" >
+                </div>
+                <div class="m">외돌개
+                    <img class="img1"  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTA5MjBfNTkg%2FMDAxNTY4OTY3Mjc4MzI3.AYFxPaJjGU2v83nF3IMsjz3I3mTzeOqe0chIODoZ6gMg.tDWE8FCV5-Ig_nWJ6VF9G8sqiFYvp6NvwD1m4ACZskQg.JPEG.skeleton258%2FDSC_4309.JPG&type=sc960_832" >
+                    <p>2011년 6월 30일 문화재청이 쇠소깍, 산방산과 함께 국가지정문화재 명승으로 지정했다. 높이는 20m로 삼매봉 남쪽 기슭에 있으며 바다 한복판에 홀로 우뚝 솟아 있다고 하여 '외돌개'라 한다. 150만 년 전 화산 폭발로 섬의 모습이 바뀔 때 생긴 바위섬으로 꼭대기에는 작은 소나무들이 몇 그루 자생하고 있다. 오르기에는 너무 위험한 기암절벽의 형태이며, 보는 방향에 따라 모양이 다르게 보인다.
+                    </p>
+                </div>
+                <div class="m">황우지해안
+                    <img class="img1" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimage.nmv.naver.net%2Fblog_2021_04_30_1990%2F0553732d-a9bd-11eb-a722-a0369ff9545c_01.jpg&type=sc960_832" >
+                    <p>황우지해안은 제주도의 대표적인 관광명소 가운데 하나인 외돌개에서 도보로 5분 정도면 닿는 거리에 있다. 평소에도 수많은 관광객이 들락거리지만 검은 현무암이 마치 요새처럼 둘러쳐진 황우지해안은 마음먹고 찾지 않는 이상 쉽게 눈에 띄지 않는다. 올레 7코스 시작점 표식 사이로 난 길을 따라 내려가면 황우지해안 전적비가 서 있는 바닷가 절벽에 닿는다. 황우지해안은 예전 무장공비가 침투해 전투를 벌였던 곳이기도 하다.
+                       
+                        
+                        </p>
+                </div>
+            </div>
+
+        </div>  
+    </div>
+</body>
+</html>
