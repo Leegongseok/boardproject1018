@@ -35,8 +35,8 @@ public class WebSecurityConfig {
         return http.build();
     }
 
-    @Bean
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+    // Authentication 설정은 메서드로만 사용 (빈으로 등록하지 않음)
+    public void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
                 .withUser("user").password(passwordEncoder().encode("password")).roles("USER")
                 .and()

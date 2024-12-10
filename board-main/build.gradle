@@ -24,7 +24,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.security:spring-security-config'
-	implementation files('libs/ojdbc8.jar') // 수동 추가한 Oracle 드라이버
+	implementation files('libs/ojdbc11.jar') // 수동 추가한 Oracle 드라이버
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
